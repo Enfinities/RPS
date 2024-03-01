@@ -8,5 +8,5 @@ def test_players_are_dicts():
     from rps_functions import battle
     player1 = {}
     player2 = {}
-    assert(player1, dict)
+    assert isinstance(player1, dict)
 
