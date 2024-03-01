@@ -6,7 +6,7 @@ def test_module_and_function_name():
 
 def test_players_are_dicts():
     from rps_functions import battle
-    player1 = {}
-    player2 = {}
+    player1 = {"name":"name", "option1":"rock", "option1":"paper", "option1":"scissors"}
+    player2 = {"name":"name", "option1":"rock", "option1":"paper", "option1":"scissors"}
     assert isinstance(player1, dict)
 
