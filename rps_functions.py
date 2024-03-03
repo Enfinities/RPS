@@ -1,28 +1,33 @@
-choice = ["rock", "paper", "scissors"]
-
 def battle(player1,player2):
     choice = ['rock','paper','scissors']
-
-    if player1["choice"] == "rock":
-        if player2["choice"] =="scissors":
+    p1_choice = "choice" in player1.keys()
+    p2_choice = "choice" in player2.keys()
+    p1 = player1.get("choice", None)
+    p2 = player2.get("choice", None)
+    if not p1_choice:
+        raise ValueError("p1 error")
+    if not p2_choice:
+        raise ValueError("p2 error")
+    if p1 == "rock":
+        if p2 =="scissors":
             return player1
-        elif player2["choice"] =="paper":
+        elif p2 =="paper":
             return player2
-        elif player2["choice"] =="rock":
+        elif p2 =="rock":
             return None
-    elif player1["choice"] == "paper":
-        if player2["choice"] =="rock":
+    elif p1 == "paper":
+        if p2 =="rock":
             return player1
-        elif player2["choice"] =="scissors":
+        elif p2 =="scissors":
             return player2
-        elif player2["choice"] =="paper":
+        elif p2 =="paper":
             return None
-    elif player1["choice"] == "scissors":
-        if player2["choice"] =="paper":
+    elif p1 == "scissors":
+        if p2 =="paper":
             return player1
-        elif player2["choice"] =="rock":
+        elif p2 =="rock":
             return player2
-        elif player2["choice"] =="scissors":
+        elif p2 =="scissors":
             return None
     else:
         raise ValueError()
@@ -32,5 +37,7 @@ def battle(player1,player2):
 if __name__ == "__main__":
     player1 = {"choice": "rock", "discord_id": 123456, "username": "Cherub Fish"}
     player2 = {"choice": "paper", "discord_id": 654321, "username": "Jawfish"}
-    result = battle(player1, player2)
-    print(result)
+    try:
+        result = battle(player1, player2)
+    except ValueError:
+        print("choice")
