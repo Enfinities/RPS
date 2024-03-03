@@ -38,3 +38,7 @@ def test_outcome_results():
                     assert outcome == player2
                 if y == "paper":
                     assert outcome == player1
+
+
+
+
