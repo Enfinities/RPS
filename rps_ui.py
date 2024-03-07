@@ -26,6 +26,10 @@ base = SlashCommand(
 )
 
 async def my_command_function(ctx: SlashContext,rps_option):
+    print(dir(ctx))
+    author = ctx.author
+    a_id = ctx.author_id
+    guild = ctx.guild_id
     await ctx.send(rps_option, ephemeral=True)
 
 bot.start()

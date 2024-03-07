@@ -1,3 +1,5 @@
+import interactions
+import json
 def battle(player1,player2):
     choice = ['rock','paper','scissors']
     p1_choice = "choice" in player1.keys()
