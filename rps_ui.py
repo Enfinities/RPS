@@ -11,6 +11,6 @@ bot = interactions.Client(token=BOT_TOKEN)
 @slash_command(name="my_command", description="My first command :)")
 async def my_command_function(ctx: SlashContext):
     await ctx.send("Hello World")
-
+bot.start()
 if __name__ == "__main__":
     bot.start()
