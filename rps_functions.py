@@ -32,7 +32,7 @@ def battle(player1,player2):
     else:
         raise ValueError()
 
-#print(battle(player1=str,player2=str))
+
 
 if __name__ == "__main__":
     player1 = {"choice": "rock", "discord_id": 123456, "username": "Cherub Fish"}
@@ -41,3 +41,4 @@ if __name__ == "__main__":
         result = battle(player1, player2)
     except ValueError:
         print("choice")
+    print(result)

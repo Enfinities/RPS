@@ -1,1 +1,3 @@
 pytest
+interactions
+python-decouple
