@@ -34,6 +34,18 @@ def battle(player1,player2):
     else:
         raise ValueError()
 
+def decider(author_id,guild_id,option):
+    pass
+def create_entry():
+    pass
+def check_entry():
+    pass
+
+def update_entry():
+    pass
+
+def delete_entry():
+    pass
 
 
 if __name__ == "__main__":

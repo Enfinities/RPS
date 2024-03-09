@@ -41,4 +41,13 @@ def test_outcome_results():
 
 
 
-
+def test_decider():
+    pass
+def test_create_entry():
+    pass
+def test_check_entry():
+    pass
+def test_update_entry():
+    pass
+def test_delete_entry():
+    pass
