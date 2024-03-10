@@ -2,7 +2,8 @@ import pytest
 
 import rps_functions
 from rps_functions import battle
-
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 def test_module_and_function_name():
     from rps_functions import battle
     assert True

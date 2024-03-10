@@ -1,5 +1,6 @@
 import interactions
 import json
+File_name = "test_rps_data"
 def battle(player1,player2):
     choice = ['rock','paper','scissors']
     p1_choice = "choice" in player1.keys()
@@ -40,8 +41,11 @@ def create_entry():
     pass
 def check_entry(File_name, guild_id, author_id):
 #10 cases
+    listhere=[ guild_id, author_id, File_name]
+    guild = guild_id
+    author= author_id
     #check for json Y/N
-
+    return "Database not found"
     # check for guild_id Y/N
     # check for author id Y/N
     # check for check user number 1/2/>2
@@ -58,6 +62,9 @@ def delete_entry():
 if __name__ == "__main__":
     player1 = {"choice": "rock", "discord_id": 123456, "username": "Cherub Fish"}
     player2 = {"choice": "paper", "discord_id": 654321, "username": "Jawfish"}
+    File_name = "test_rps_data"
+    guild_id = 123456789
+    author_id = 987654321
     try:
         result = battle(player1, player2)
     except ValueError:
