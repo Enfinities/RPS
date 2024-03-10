@@ -47,19 +47,23 @@ def test_decider():
 def test_create_entry():
 
     pass
-def test_check_entry():
+# 10 cases for check_entry
+def test_check_entry_no_database():
+
+    # check for json Y/N
     File_name = "test_rps_data_not_exist.json"
     guild_id = 123456789
     author_id = 987654321
     result=rps_functions.check_entry(File_name, guild_id, author_id)
     assert result == "Database not found"
-# 10 cases
-    # check for json Y/N
+
+def test_check_entry():
+    pass
     # check for guild_id Y/N
     # check for author id Y/N
     # check for check user number 1/2/>2
     # else raise error
-    pass
+
 def test_update_entry():
     pass
 def test_delete_entry():
