@@ -39,7 +39,7 @@ def decider(author_id,guild_id,option):
 def create_entry():
     pass
 def check_entry():
-    #10 cases
+#10 cases
     #check for json Y/N
     # check for guild_id Y/N
     # check for author id Y/N

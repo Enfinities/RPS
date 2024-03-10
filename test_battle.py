@@ -47,6 +47,12 @@ def test_create_entry():
 
     pass
 def test_check_entry():
+# 10 cases
+    # check for json Y/N
+    # check for guild_id Y/N
+    # check for author id Y/N
+    # check for check user number 1/2/>2
+    # else raise error
     pass
 def test_update_entry():
     pass
