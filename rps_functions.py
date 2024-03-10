@@ -38,9 +38,10 @@ def decider(author_id,guild_id,option):
     pass
 def create_entry():
     pass
-def check_entry():
+def check_entry(File_name, guild_id, author_id):
 #10 cases
     #check for json Y/N
+
     # check for guild_id Y/N
     # check for author id Y/N
     # check for check user number 1/2/>2

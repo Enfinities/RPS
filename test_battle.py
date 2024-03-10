@@ -1,5 +1,6 @@
 import pytest
 
+import rps_functions
 from rps_functions import battle
 
 def test_module_and_function_name():
@@ -47,6 +48,11 @@ def test_create_entry():
 
     pass
 def test_check_entry():
+    File_name = "test_rps_data_not_exist.json"
+    guild_id = 123456789
+    author_id = 987654321
+    result=rps_functions.check_entry(File_name, guild_id, author_id)
+    assert result == "Database not found"
 # 10 cases
     # check for json Y/N
     # check for guild_id Y/N
